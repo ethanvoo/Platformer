@@ -81,7 +81,7 @@ class Player:
             self.x -= self.player_speed
         if keys[pygame.K_d]:
             self.x += self.player_speed
-        if keys[pygame.K_w] and self.on_ground:
+        if (keys[pygame.K_w] or keys[pygame.K_SPACE]) and self.on_ground:
             self.downward_velocity = -10.0
 
     def check_collision(self, other_rect: Rect) -> bool:

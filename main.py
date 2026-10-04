@@ -31,17 +31,13 @@ class Game:
             Platform(
                 texture = self.platform_texture, 
                 init_x = 0, 
-                init_y = self.screen_height - self.platform_texture.get_height(), 
-                width = self.platform_texture.get_width(), 
-                height = self.platform_texture.get_height(),
+                init_y = self.screen_height - self.platform_texture.get_height(),
                 debug = self.DEBUG_MODE
             ),
             Platform(
                 texture = self.platform_texture, 
                 init_x = 512, 
-                init_y = self.screen_height - self.platform_texture.get_height() - self.platform_texture.get_height() * 2, 
-                width = self.platform_texture.get_width(), 
-                height = self.platform_texture.get_height(),
+                init_y = self.screen_height - self.platform_texture.get_height() - self.platform_texture.get_height() * 2,
                 debug = self.DEBUG_MODE
             )
         ]

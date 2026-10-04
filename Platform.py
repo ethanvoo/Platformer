@@ -7,16 +7,14 @@ class Platform:
             self,
             texture: Surface, 
             init_x: int, 
-            init_y: int, 
-            width: int, 
-            height: int,
+            init_y: int,
             debug: bool = False
     ):
         self.texture: Surface = texture
         self.x: int = init_x
         self.y: int = init_y
-        self.width: int = width
-        self.height: int = height
+        self.width: int = texture.get_width()
+        self.height: int = texture.get_height()
 
         self.debug: bool = debug
 
